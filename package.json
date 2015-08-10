@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "uibench-bobril",
+  "version": "0.1.0",
+  "description": "UI Benchmark: Bobril",
+  "homepage": "https://github.com/bobris/uibench-bobril",
+  "repository": "https://github.com/bobris/uibench-bobril",
+  "author": {
+    "name": "Boris Letocha",
+    "email": "boris.letocha@gmail.com",
+    "url": "https://github.com/bobris"
+  },
+  "keywords": [
+    "Bobril",
+    "uibench",
+    "benchmark"
+  ],
+  "dependencies": {
+    "bobril": "~4.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "~1.10.1",
+    "webpack": "~1.10.5",
+    "gulp-util": "~3.0.6",
+    "gulp": "~3.9.0",
+    "gulp-gh-pages": "~0.5.2"
+  }
+}
