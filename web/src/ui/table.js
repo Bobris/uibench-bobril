@@ -6,7 +6,7 @@ exports.TableCell = b.createVirtualComponent({
     render: function (ctx, me) {
         me.tag = 'td';
         me.className = 'TableCell';
-        me.children = ctx.data.text;
+        me.children = '' + ctx.data.text;
     }
 });
 exports.TableRow = b.createVirtualComponent({

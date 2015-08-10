@@ -7,7 +7,7 @@ export const TableCell = b.createVirtualComponent<any>({
     render(ctx: b.IBobrilCtx, me: b.IBobrilNode) {
         me.tag = 'td';
         me.className = 'TableCell';
-        me.children = ctx.data.text;
+        me.children = ''+ctx.data.text;
     }
 });
 

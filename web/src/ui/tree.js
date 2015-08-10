@@ -6,7 +6,7 @@ exports.TreeLeaf = b.createVirtualComponent({
     render: function (ctx, me) {
         me.tag = 'li';
         me.className = 'TreeLeaf';
-        me.children = ctx.data.id;
+        me.children = '' + ctx.data.id;
     }
 });
 exports.TreeNode = b.createVirtualComponent({
@@ -30,7 +30,7 @@ exports.TreeNode = b.createVirtualComponent({
         me.children = children;
     }
 });
-exports.Tree = b.createVirtualComponent({
+exports.Tree = b.createComponent({
     shouldChange: function (ctx, me) {
         return me.data != ctx.data;
     },

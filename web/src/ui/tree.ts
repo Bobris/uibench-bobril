@@ -7,7 +7,7 @@ export const TreeLeaf = b.createVirtualComponent<any>({
     render(ctx: b.IBobrilCtx, me: b.IBobrilNode) {
         me.tag = 'li';
         me.className = 'TreeLeaf';
-        me.children = ctx.data.id;
+        me.children = ''+ctx.data.id;
     }
 });
 
@@ -33,7 +33,7 @@ export const TreeNode = b.createVirtualComponent<any>({
     }
 });
 
-export const Tree = b.createVirtualComponent<any>({
+export const Tree = b.createComponent<any>({
     shouldChange(ctx: b.IBobrilCtx, me: b.IBobrilNode): boolean {
         return me.data != ctx.data;
     },
