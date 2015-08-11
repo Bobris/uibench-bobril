@@ -22,7 +22,7 @@ exports.TableRow = b.createVirtualComponent({
         var cells = data.props;
         var children = [exports.TableCell({ text: '#' + data.id })];
         for (var i = 0; i < cells.length; i++) {
-            children.push(b.withKey(exports.TableCell({ text: cells[i] }), i));
+            children.push(exports.TableCell({ text: cells[i] }));
         }
         me.tag = 'tr';
         me.className = classes;

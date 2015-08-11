@@ -25,7 +25,7 @@ export const TableRow = b.createVirtualComponent<any>({
 
         let children = [TableCell({ text: '#' + data.id })];
         for (var i = 0; i < cells.length; i++) {
-            children.push(b.withKey(TableCell({ text: cells[i] }), <any>i)); // Here key is not needed added just to follow React implementation
+            children.push(TableCell({ text: cells[i] }));
         }
         me.tag = 'tr';
         me.className = classes;
