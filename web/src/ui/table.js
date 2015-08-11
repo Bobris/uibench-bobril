@@ -7,6 +7,10 @@ exports.TableCell = b.createVirtualComponent({
         me.tag = 'td';
         me.className = 'TableCell';
         me.children = '' + ctx.data.text;
+    },
+    onClick: function (ctx) {
+        console.log('Clicked ' + ctx.data.text);
+        return true;
     }
 });
 exports.TableRow = b.createVirtualComponent({
