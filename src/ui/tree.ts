@@ -1,4 +1,4 @@
-import * as b from 'node_modules/bobril/index';
+import * as b from 'bobril';
 
 export const TreeLeaf = b.createVirtualComponent<any>({
     shouldChange(ctx: b.IBobrilCtx, me: b.IBobrilNode): boolean {
